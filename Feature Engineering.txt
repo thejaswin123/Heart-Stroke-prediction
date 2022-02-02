@@ -1,0 +1,10 @@
+Feature Engineering - Feature engineering covers the division of the data into three categories, namely, Binary, Continuous and Categorical.
+ a. Binary: One hot-encoding is used to convert the features Gender, Marital status and Residential area into binary (0 or 1) values.
+      Gender: 0 represents female, and 1 represents male
+      Marital Status: 0 represents unmarried, and 1 represents married.
+      Residential Area: 0 represents rural area, 1 represents urban area.
+ b. Continuous Features: A function has been devised to divide the features of Average Glucose level, BMI and Age into constant ranges.
+      Age: Age is divided into continuous ranges of 20 years, starting from 0-19 years, 20-39 years, 40-59 years and above 60 years.
+      Average Glucose Level: The glucose levels have been divided into blocks of percentages with respect to the maximum value. The blocks are of 25% each, starting from below 25%, 26-50%, 51-75% and above 75%.
+ c. Categorical Features: First, we implement One-hot encoding on the previously transformed continuous features. These are then mapped into matrices of binary values, making it easier to process the data.
+Note: The BMI feature had 101 null values; since the data is typically distributed,  the null values are replaced with the mean of the BMI as the 50% line is similar to the mean.
